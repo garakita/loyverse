@@ -6,7 +6,7 @@ $CurPageURL = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
 define('API_KEY', "LDdbGj481V7a9mcGSuo3");
 define('SECRET_KEY', "YABN6DcyHGosqrETRt8-m4d9pejIjWVc65M4fbQkJM7RGJKLcBrIdA==");
-define('REDIRECT_URL', "https://onlinetoolstack.com/api/loyverse/redirect.php");
+define('REDIRECT_URL', "https://loyverse.herokuapp.com/redirect.php");
 
 // define('COMPANY_ID', '11');
 // define('ENCRYPT', 'bceb69');
