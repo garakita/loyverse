@@ -14,8 +14,8 @@ define('REDIRECT_URL', "https://loyverse.herokuapp.com/redirect.php");
 
 //-- auth ที่มาจากการจำลอง server เข้าสู่ TRCLOUD
 define('COMPANY_ID', '11');
-define('ENCRYPT', '3bf46e');
-define('PASSKEY', '042b93c83bf46e1d146e69a4e133f9aa');
+define('ENCRYPT', 'c38068');
+define('PASSKEY', '4ae37d8ec380686f31ba9891c34bda6e');
 
 
 define('POSTNG_URL', 'https://parat.trcloud.co/application/api-connector/end-point/engine-revenue/invoice.php');
