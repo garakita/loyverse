@@ -431,6 +431,31 @@ function line_notify($option)
 	else { 
 		$result_ = json_decode($result, true); 
 		echo "status : ".$result_['status']; echo "message : ". $result_['message'];
+		if (isset($response['success']) && $response['success'] == 0) {
+                $to = 'ma99iimac@gmail.com';
+                $subject = 'Invoice was not added: ' . date('Y-m-d');
+                $from = 'ma99iimac@gmail.com';
+
+                // To send HTML mail, the Content-type header must be set
+                $headers  = 'MIME-Version: 1.0' . "\r\n";
+                $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+                // Create email headers
+                $headers .= 'From: ' . $from . "\r\n" .
+                    'Reply-To: ' . $from . "\r\n" .
+                    'X-Mailer: PHP/' . phpversion();
+
+                // Compose a simple HTML email message
+                $message = '<html><body>';
+                $message .= $response['message'];
+                echo $message .= '</body></html>';
+
+                if (mail($to, $subject, $message, $headers)) {
+                    echo 'Your mail has been sent successfully.';
+                } else {
+                    echo 'Unable to send email. Please try again.';
+                }
+            }
 	} 
 	curl_close( $chOne );   
 
