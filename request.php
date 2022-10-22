@@ -312,7 +312,7 @@ if ($response == false) {
         $data["securekey"]     = $hash;
         $data["timestamp"]     = $time;
         $json                 = json_encode($data, JSON_UNESCAPED_UNICODE);
-        $origin                = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://{$_SERVER["HTTP_HOST"]}";
+        $origin                = "https://loyverse.herokuapp.com";
         $curl = curl_init();
         
             curl_setopt_array($curl, array(
