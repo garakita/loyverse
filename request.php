@@ -390,7 +390,7 @@ function line_notify($option)
     $data = json_decode($option["input"]["json"],true);
 
     //-- Line Notify Token :wd9F9V0OYw3liQ4n26NsCHR01p6m1KG2lIAXKyezuYn
-    $sToken = "wd9F9V0OYw3liQ4n26NsCHR01p6m1KG2lIAXKyezuYn"; //-- นำ line notify token 
+    $sToken = "rxVXVCOjpvinoc2MOGqjzzx1wliFi7fy2wG86OpWgv5"; //-- นำ line notify token 
 	$sMessage = "มีรายการถูกนำเข้า....\n";
     $sMessage .= "แจ้งเตือน : ".$option["message"]."\n";
 
