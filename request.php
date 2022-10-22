@@ -389,8 +389,8 @@ function line_notify($option)
 
     $data = json_decode($option["input"]["json"],true);
 
-    //-- Line Notify Token :wd9F9V0OYw3liQ4n26NsCHR01p6m1KG2lIAXKyezuYn
-    $sToken = "XGnsQNYg39M8EZ3r6ZN4sZYqtNmlN8eXmKpz391XzsJ"; //-- นำ line notify token 
+    //-- Line Notify Token :XGnsQNYg39M8EZ3r6ZN4sZYqtNmlN8eXmKpz391XzsJ -Mac Personal Line Notify
+    $sToken = "v7acXZd2xKWwNSyxsW3YKsZZv15r6j38PlWEGxDfhos"; //-- นำ line notify token Bigwell group
 	$sMessage = "มีรายการถูกนำเข้า....\n";
     $sMessage .= "แจ้งเตือน : ".$option["message"]."\n";
 
