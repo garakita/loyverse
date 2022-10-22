@@ -270,7 +270,7 @@ if ($response == false) {
             "status" => "Debtor",
             "payment" => "",
             "wht" => 0,
-            "tax_date" => "2016-10-17",
+            "tax_date" => date('Y-m-d'),
             "salesman" => $salesman,
             "department" => $department,
             "warehouse" => $warehouse,
