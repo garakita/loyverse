@@ -101,33 +101,33 @@ if ($response == false) {
                     }
                     if($pmtv['name']=='D-Grabfood' || $pmtv['name']=='D- Grabfood'){
                     
-                        $money_amount = ( $value["receipt_type"] == "SALE" ) ? $money_amount + $pmtv['money_amount'] : $money_amount - $pmtv['money_amount'];
-                        $c4 = $money_amount;  
+                        $c4 = ( $value["receipt_type"] == "SALE" ) ? $c4 + $pmtv['money_amount'] : $c4 - $pmtv['money_amount'];
+                        
                     }
                     if($pmtv['name']=='D-Robinhood' || $pmtv['name']=='D- Robinhood'){
                     
-                        $money_amount = ( $value["receipt_type"] == "SALE" ) ? $money_amount + $pmtv['money_amount'] : $money_amount - $pmtv['money_amount'];
-                        $c5 = $money_amount;  
+                        $c5 = ( $value["receipt_type"] == "SALE" ) ? $c5 + $pmtv['money_amount'] : $c5 - $pmtv['money_amount'];
+                         
                     }
                     if($pmtv['name']=='D-Shopeefood' || $pmtv['name']=='D- Shopeefood'){
                     
-                        $money_amount = ( $value["receipt_type"] == "SALE" ) ? $money_amount + $pmtv['money_amount'] : $money_amount - $pmtv['money_amount'];
-                        $c6 = $money_amount;  
+                        $c6 = ( $value["receipt_type"] == "SALE" ) ? $c6 + $pmtv['money_amount'] : $c6 - $pmtv['money_amount'];
+                         
                     }
                     if($pmtv['name']=='D-Food Panda' || $pmtv['name']=='D- Food Panda'){
                     
-                        $money_amount = ( $value["receipt_type"] == "SALE" ) ? $money_amount + $pmtv['money_amount'] : $money_amount - $pmtv['money_amount'];
-                        $c7 = $money_amount;  
+                        $c7 = ( $value["receipt_type"] == "SALE" ) ? $c7 + $pmtv['money_amount'] : $c7 - $pmtv['money_amount'];
+                        
                     }
                     if($pmtv['name']=='D-Truefood' || $pmtv['name']=='D- Truefood'){
                     
-                        $money_amount = ( $value["receipt_type"] == "SALE" ) ? $money_amount + $pmtv['money_amount'] : $money_amount - $pmtv['money_amount'];
-                        $c8 = $money_amount;  
+                        $c8 = ( $value["receipt_type"] == "SALE" ) ? $c8 + $pmtv['money_amount'] : $c8 - $pmtv['money_amount'];
+                        
                     }
                     if($pmtv['name']=='D-Airasia Food' || $pmtv['name']=='D- Airasia Food'){
                     
-                        $money_amount = ( $value["receipt_type"] == "SALE" ) ? $money_amount + $pmtv['money_amount'] : $money_amount - $pmtv['money_amount'];
-                        $c9 = $money_amount;  
+                        $c9 = ( $value["receipt_type"] == "SALE" ) ? $c9 + $pmtv['money_amount'] : $c9 - $pmtv['money_amount'];
+                        
                     }
 
                
