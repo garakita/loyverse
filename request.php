@@ -138,9 +138,9 @@ if ($response == false) {
             // ac7c9633-482b-4cd4-a622-b274d938119f
             if ($value['store_id'] == 'ac7c9633-482b-4cd4-a622-b274d938119f') {
 
-                $salesman = 'SP1SC-Plaza';
+                $salesman = 'SP1-SC_Plaza';
                 
-                $warehouse = 'S1SC-Plaza';
+                $warehouse = 'S1-SC_Plaza';
                 
                 $department = 'B1-SC_Plaza';
 
