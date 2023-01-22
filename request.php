@@ -161,7 +161,7 @@ if ($response == false) {
                 ];
             } else {
 
-                $company_format = "V2";
+                $company_format = "IV2";
 
                 $salesman = 'SP2-Sai4';
                 $warehouse = 'S2-Sai4';
