@@ -216,7 +216,7 @@ if ($response == false) {
                     "cost" => ""
                 ];
 
-            
+             }
             // }
 
             // array_push($arr,$value["store_id"]);
