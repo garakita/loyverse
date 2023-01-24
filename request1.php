@@ -13,11 +13,11 @@ $token = refreshToken($refresh_token);
 define('ACCESS_TOKEN', $token);
 
 
-$start_date_time = date('Y-m-d 00:00:01');
-$end_date_time = date('Y-m-d 23:59:59');
+//$start_date_time = date('Y-m-d 00:00:01');
+//$end_date_time = date('Y-m-d 23:59:59');
 
-//$start_date_time = date('22-12-02 00:00:01');
-//$end_date_time = date('22-12-02 23:59:59');
+$start_date_time = date('22-01-23 00:00:01');
+$end_date_time = date('22-01-23 23:59:59');
 
 $start_date_time = date('Y-m-d\TH:i:s.sZ', strtotime($start_date_time));
 $end_date_time = date('Y-m-d\TH:i:s.sZ', strtotime($end_date_time));
