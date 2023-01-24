@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -135,33 +136,9 @@ if ($response == false) {
             }
             // ac7c9633-482b-4cd4-a622-b274d938129f
             // ac7c9633-482b-4cd4-a622-b274d938119f
-             if ($value['store_id'] == 'e4db6398-022a-4b3e-b382-4b0e8b36e66e') {
-				
-				
-				 $company_format = "IV2";
+            if ($value['store_id'] == 'ac7c9633-482b-4cd4-a622-b274d938119f') {
 
-                $salesman = 'SP2-Sai4';
-                $warehouse = 'S2-Sai4';
-                $department = 'B2-Sai4';
-                
-				$customer = [
-				"title" => 'S0002',
-				"name" => 'หน้าร้าน สาขา สาย 4',
-				"organization" => "",
-				"branch" => "",
-				"email" => "",
-				"telephone" => "",
-				"address" => "",
-				"tax_id" => "",
-				"add_contact" => false,
-				"update_contact" => true,
-				"contact_id" => 3462
-
-				];
-
-			}else{
-				
-				$salesman = 'SP1-SC_Plaza';
+                $salesman = 'SP1-SC_Plaza';
                 
                 $warehouse = 'S1-SC_Plaza';
                 
@@ -182,8 +159,28 @@ if ($response == false) {
                     "update_contact" => true,
                     "contact_id" => 3460
                 ];
-				
-			}
+            } else {
+
+                $company_format = "V2";
+
+                $salesman = 'SP2-Sai4';
+                $warehouse = 'S2-Sai4';
+                $department = 'B2-Sai4';
+                
+                $customer = [
+                    "title" => 'S0002',
+                    "name" => 'หน้าร้าน สาขา สาย 4',
+                    "organization" => "",
+                    "branch" => "",
+                    "email" => "",
+                    "telephone" => "",
+                    "address" => "",
+                    "tax_id" => "",
+                    "add_contact" => false,
+                    "update_contact" => true,
+                    "contact_id" => 3462
+                ];
+            }
 
             $lineItem = $value['line_items'];
            
