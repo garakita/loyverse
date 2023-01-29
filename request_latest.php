@@ -14,8 +14,8 @@ $token = refreshToken($refresh_token);
 define('ACCESS_TOKEN', $token);
 
 
-$start_date_time = date('Y-m-d 00:00:01');
-$end_date_time = date('Y-m-d 23:59:59');
+$start_date_time = date('Y-m-23 00:00:01');
+$end_date_time = date('Y-m-23 23:59:59');
 
 //$start_date_time = date('22-12-02 00:00:01');
 //$end_date_time = date('22-12-02 23:59:59');
@@ -48,12 +48,13 @@ if ($response == false) {
 } else {
     $response = json_decode($response, true);
     $val = 1;
+    $val_shop2 = 2;
     if (!empty($response)) {
         $receipts = $response['receipts'];
         $invoice_number =  date('ymd') . '' . str_pad($val, 3, "0", STR_PAD_LEFT);
-        $invoice_number_shop2 =  date('ymd') . '' . str_pad($val, 3, "0", STR_PAD_LEFT);
+        $invoice_number_shop2 =  date('ymd') . '' . str_pad($val_shop2, 3, "0", STR_PAD_LEFT);
         // $invoice_number = time();
-        $val++;
+
         // echo "<pre>";
         // print_r($receipts);
         // echo "</pre>";
@@ -93,20 +94,19 @@ if ($response == false) {
         $is_shop1 = false;
         $is_shop2 = 0;
         foreach ($receipts as $key => $value) {
+
             if ($value['store_id'] == 'ac7c9633-482b-4cd4-a622-b274d938119f') {
                 require 'shop_1.php';
                 $is_shop1 = true;
-
-            }else{
+            } else {
                 require 'shop_2.php';
                 $is_shop2 = 1;
             }
-
         }
-        if($is_shop1){
+        if ($is_shop1) {
             require 'shop_1_response.php';
         }
-        if($is_shop2){
+        if ($is_shop2) {
             require 'shop_2_response.php';
         }
     }
