@@ -32,7 +32,7 @@ foreach ($sort_product_shop2 as $key2 => $item) {
 
 
 $data_shop2 = array(
-    "issue_date" => date('Y-m-1'),
+    "issue_date" => date('Y-m-01'),
     "due_date" => date('Y-m-d', strtotime("+30 days", strtotime(date('Y-m-d')))),
     "payment_term" => "",
     "company_format" => $company_format_shop2, //-- ช่องหัวเอกสาร 'IV'
