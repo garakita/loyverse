@@ -15,9 +15,9 @@ define('ACCESS_TOKEN', $token);
 
 
 $start_date_time = date('Y-m-07 00:00:00');
-$end_date_time = date('Y-m-07 23:59:58');
+$end_date_time = date('Y-m-07 23:59:59');
 
-//$start_date_time = date('22-12-02 00:00:01');
+//$start_date_time = date('22-12-02 00:00:00');
 //$end_date_time = date('22-12-02 23:59:59');
 
 $start_date_time = date('Y-m-d\TH:i:s.sZ', strtotime($start_date_time));
