@@ -14,8 +14,8 @@ $token = refreshToken($refresh_token);
 define('ACCESS_TOKEN', $token);
 
 
-$start_date_time = date('Y-m-03 00:00:00');
-$end_date_time = date('Y-m-03 23:59:59');
+$start_date_time = date('Y-m-01 00:00:00');
+$end_date_time = date('Y-m-01 23:59:59');
 
 //$start_date_time = date('22-12-02 00:00:01');
 //$end_date_time = date('22-12-02 23:59:59');
@@ -52,7 +52,7 @@ if ($response == false) {
     if (!empty($response)) {
         $receipts = $response['receipts'];
         $invoice_number =  date('ymd') . '' . str_pad($val, 3, "0", STR_PAD_LEFT);
-        $invoice_number_shop2 =  230203 . '' . str_pad($val_shop2, 3, "0", STR_PAD_LEFT);
+        $invoice_number_shop2 =  230201 . '' . str_pad($val_shop2, 3, "0", STR_PAD_LEFT);
         // $invoice_number = time();
 
         // echo "<pre>";
