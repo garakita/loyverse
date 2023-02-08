@@ -4,7 +4,7 @@
 //-- จัดเรียงสินค้า
 $sort_product_shop2 = array_orderby($product_shop2, 'id', SORT_ASC, 'quantity', SORT_DESC);
 
-//-- เพิ่มเงื่อนไขรวมสินค้าที่ซ้ำกันซ้ำกัน111
+//-- เพิ่มเงื่อนไขรวมสินค้าที่ซ้ำกันซ้ำกัน
 $cursor_2 = "__";
 $i2 = 0;
 foreach ($sort_product_shop2 as $key2 => $item) {
@@ -32,7 +32,7 @@ foreach ($sort_product_shop2 as $key2 => $item) {
 
 
 $data_shop2 = array(
-    "issue_date" => date('Y-m-07'),
+    "issue_date" => date('Y-m-d'),
     "due_date" => date('Y-m-d', strtotime("+30 days", strtotime(date('Y-m-d')))),
     "payment_term" => "",
     "company_format" => $company_format_shop2, //-- ช่องหัวเอกสาร 'IV'
