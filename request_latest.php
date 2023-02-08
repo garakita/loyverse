@@ -52,7 +52,7 @@ if ($response == false) {
     if (!empty($response)) {
         $receipts = $response['receipts'];
         $invoice_number =  date('ymd') . '' . str_pad($val, 3, "0", STR_PAD_LEFT);
-        $invoice_number_shop2 =  230207. '' . str_pad($val_shop2, 3, "0", STR_PAD_LEFT);
+        $invoice_number_shop2 =  230207 . '' . str_pad($val_shop2, 3, "0", STR_PAD_LEFT);
         // $invoice_number = time();
 
         // echo "<pre>";
