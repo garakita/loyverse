@@ -14,7 +14,7 @@ $token = refreshToken($refresh_token);
 define('ACCESS_TOKEN', $token);
 
 
-$start_date_time = date('Y-m-01 00:00:01');
+$start_date_time = date('Y-m-01 00:00:03');
 $end_date_time = date('Y-m-01 23:59:59');
 
 //$start_date_time = date('22-12-02 00:00:01');
