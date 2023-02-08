@@ -4,7 +4,7 @@
 //-- จัดเรียงสินค้า
 $sort_product_shop2 = array_orderby($product_shop2, 'id', SORT_ASC, 'quantity', SORT_DESC);
 
-//-- เพิ่มเงื่อนไขรวมสินค้าที่ซ้ำกันซ้ำกัน.
+//-- เพิ่มเงื่อนไขรวมสินค้าที่ซ้ำกันซ้ำกัน
 $cursor_2 = "__";
 $i2 = 0;
 foreach ($sort_product_shop2 as $key2 => $item) {
