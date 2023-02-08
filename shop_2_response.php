@@ -5,29 +5,30 @@
 $sort_product_shop2 = array_orderby($product_shop2, 'id', SORT_ASC, 'quantity', SORT_DESC);
 
 //-- เพิ่มเงื่อนไขรวมสินค้าที่ซ้ำกันซ้ำกัน
-$cursor = "__";
-$i = 0;
+$cursor_2 = "__";
+$i2 = 0;
 foreach ($sort_product_shop2 as $key2 => $item) {
-    if ($item["id"] != $cursor) {
-        $products[$key2]["id"] =  $item['id'];
-        $products[$key2]["product"] = $item['product'];
-        $products[$key2]["price"] =  $item['price'];
-        $products[$key2]["quantity"] =  $item['quantity'];
-        $products[$key2]["discount"] = $item['discount'];
-        $products[$key2]["vat"] = "0%";
-        $products[$key2]["before"] = $item['before'];
-        $products[$key2]["amount"] = $item['amount'];
-        $products[$key2]["cost"] = "";
-        $cursor = $item["id"];
-        $i = 0;
+    if ($item["id"] != $cursor_2) {
+        $products_shop22[$key2]["id"] =  $item['id'];
+        $products_shop22[$key2]["product"] = $item['product'];
+        $products_shop22[$key2]["price"] =  $item['price'];
+        $products_shop22[$key2]["quantity"] =  $item['quantity'];
+        $products_shop22[$key2]["discount"] = $item['discount'];
+        $products_shop22[$key2]["vat"] = "0%";
+        $products_shop22[$key2]["before"] = $item['before'];
+        $products_shop22[$key2]["amount"] = $item['amount'];
+        $products_shop22[$key2]["cost"] = "";
+        $cursor_2 = $item["id"];
+        $i2 = 0;
     } else {
-        $i++;
-        $products[$key2 - $i]["quantity"] += $item["quantity"];
-        $products[$key2 - $i]["discount"] += $item['discount'];
-        $products[$key2 - $i]["before"] += $item['before'];
-        $products[$key2 - $i]["amount"] += $item['amount'];
+        $i2++;
+        $products_shop22[$key2 - $i2]["quantity"] += $item["quantity"];
+        $products_shop22[$key2 - $i2]["discount"] += $item['discount'];
+        $products_shop22[$key2 - $i2]["before"] += $item['before'];
+        $products_shop22[$key2 - $i2]["amount"] += $item['amount'];
     }
 }
+
 
 
 $data_shop2 = array(
@@ -64,7 +65,7 @@ $data_shop2 = array(
     "approve_status" => "",
     "add_product" => "NO",
     "customer" => $customer_shop2,
-    "product" => $product_shop2,
+    "product" => $products_shop22,
     "c1" => $c1_shop2,
     "c2" => $c2_shop2,
     "c3" => $c3_shop2,
